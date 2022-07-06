@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up Form</title>
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/yantiq" type="text/css"/>
+  <link rel="stylesheet" href="style/style.css">
+  <script src="javascript/script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="leftSide">
+      <div class="animeLogo">
+        <img src="/photos/naruto.jpg" alt="" srcset="">
+        <h1>Anime Club</h1>
+      </div>
+    </div>
+    <div class="rightSide">
+      <p>
+        This is not a real online service! This is just a website that I made to practice creating forms. This is anime club forum sign up page.
+        Sign up <em>now</em> to join the community.<br/>You <em>know</em> you want to.
+      </p>
+      <p>Let's do this!</p>
+      <form action="" method="post">
+        <div class="input">
+          <label for="firstName">FIRST NAME <abbr title="Your first name is required" aria-label="required">*</abbr></label>
+          <input type="text" name="firstName" id="firstName" placeholder="Ex. Naruto" minlength="1" maxlength="20" required>
+        </div>
+        <div class="input">
+          <label for="lastName">LAST NAME <abbr title="Your last name is required" aria-label="required">*</abbr></label>
+          <input type="text" name="lastName" id="lastName" placeholder="Ex. Uzumaki" required minlength="1" maxlength="20">
+        </div>
+        <div class="input">
+          <label for="email">EMAIL <abbr title="Your email is required" aria-label="required">*</abbr></label>
+          <input type="email" name="email" id="email" placeholder="Ex. narutouzumaki@gmail.com" required>
+        </div>
+        <div class="input">
+          <label for="phoneNumber">PHONE NUMBER</label>
+          <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Ex. (000)000-0000">
+        </div>
+        <div class="input">
+          <label for="password">PASSWORD <abbr title="Your password is required" aria-label="required">*</abbr></label>
+          <input type="password" name="password" id="password" placeholder="Minimum Length = 6" minlength="6" maxlength="30" required>
+          <span class="confirmation"></span>
+        </div>
+        <div class="input">
+          <label for="confirmPassword">CONFIRM PASSWORD <abbr title="Your password confirmation is required" aria-label="required">*</abbr></label>
+          <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Must Match Password">
+        </div>
+        <div class="submit">
+          <button type="submit">Create Account</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

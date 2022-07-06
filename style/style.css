@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  font-family: 'YantiqRegular';
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  /* position: fixed; */
+}
+
+.container, .animeLogo {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.leftSide {
+  /* flex: 1; */
+  width: 35vw;
+  /* height: 100%; */
+  height: auto;
+  /* position: relative; */
+  background-image: url(/photos/samuel-berner-kcvEQb7GXZc-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.animeLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.33);
+  position: relative;
+  width: 100%;
+  top: 15vh;
+  padding: 10px 10px;
+  color: white;
+}
+
+.animeLogo > img {
+  display: inline;
+  width: 90px;
+}
+
+.animeLogo > h1 {
+  margin-left: 20px;
+  font-size: 2.3rem;
+  display: inline;
+}
+
+.rightSide {
+  flex: 1;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  width: 65vw;
+  background-color: black;
+}
+
+p + p {
+  margin-top: 40px;
+  text-decoration: underline;
+}
+
+.rightSide > form {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+form {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+.input {
+  display: flex;
+  flex-flow: column;
+  width: 38%;
+}
+
+input {
+  color: black;
+}
+
+input:required:valid{
+  padding-left: 23px;
+  background-image: url(/photos/checkmark.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+}
+
+input:focus {
+  border: solid #e5e7eb 1px;
+}
+
+abbr {
+  font-size: 0.8rem;
+}
+
+.submit {
+  margin-top: 5px;
+  width: 100%;
+  display: block;
+}
+
+.submit > button {
+  color: black;
+  width: 20%;
+  height: 7vh;
+}
+
+.notMatch {
+  color: red;
+  font-size: 0.8rem;
+}
+
+.match {
+  color: green;
+  font-size: 0.8rem;
+}
